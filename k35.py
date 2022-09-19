@@ -81,9 +81,17 @@ class ktools:
 
 
 def main():
-    """ Karel code goes here! """
+    """ Karel code goes here!"""
+    move()
+    turn_left()
+    move()
+    move()
     kt = ktools()
     kt.h()
+    kt.e()
+    kt.l()
+    kt.l()
+    kt.o()
     pass
 
 
