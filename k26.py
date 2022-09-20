@@ -44,7 +44,8 @@ class ktools:
     self.put()
 
   def h(self):
-    """Print H using beepers"""
+    """Print H usin beepers"""
+    self.tl()
     self.put5()
     self.tr()
     self.m()
@@ -67,29 +68,37 @@ class ktools:
     self.m()
     self.m()
 
-  def e(self):
-    """Print E using beepers"""
+  def mountain(self):
+    self.m()
+    self.m()
     self.tl()
-    self.put5()
+    self.m()
+    self.m()
     self.tr()
     self.m()
-    self.put2()
-    self.
+    self.tl()
+    self.m()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.tr()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
     
 
-
 def main():
-    """ Karel code goes here!"""
-    move()
-    turn_left()
-    move()
-    move()
+    """ Karel code goes here! """
     kt = ktools()
-    kt.h()
-    kt.e()
-    kt.l()
-    kt.l()
-    kt.o()
+    kt.mountain()
     pass
 
 
