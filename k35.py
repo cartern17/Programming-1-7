@@ -43,6 +43,11 @@ class ktools:
     self.m()
     self.put()
 
+
+  def mm(self, num):
+    for number in range(0, num):
+      self.m()
+
   def h(self):
     """Print H using beepers"""
     self.put5()
@@ -74,8 +79,39 @@ class ktools:
     self.tr()
     self.m()
     self.put2()
-    self.
-    
+    self.ta()
+    self.mm(2)
+    self.tl()
+    self.mm(2)
+    self.tl()
+    self.m()
+    self.put2()
+    self.tr()
+    self.mm(2)
+    self.tr()
+    self.put2()
+    self.ta()
+    self.mm(3)
+
+  def l(self):
+    self.tl()
+    self.put5()
+    self.ta()
+    self.mm(4)
+    self.tl()
+    self.m()
+    self.put2()
+    self.mm(2)
+
+  def o(self):
+    self.l()
+    self.ta()
+    self.m()
+    self.ta()
+    self.tl()
+    self.mm(4)
+    self.tl()
+    self.l()
 
 
 def main():
