@@ -1,5 +1,5 @@
 from stanfordkarel import *
-
+from time import sleep
 
 class ktools: 
   def m(self):
@@ -43,6 +43,12 @@ class ktools:
     self.m()
     self.put()
 
+  def putm(self, num):
+    for i in  range(num - 1):
+      self.put()
+      self.m()
+    self.put()
+
 
   def mm(self, num):
     for number in range(0, num):
@@ -67,7 +73,6 @@ class ktools:
     self.m()
     self.m()
     self.tl()
-    self.m()
     self.m()
     self.m()
     self.m()
@@ -114,7 +119,55 @@ class ktools:
     self.l()
 
   def n(self):
-    self
+    self.put5()
+    self.ta()
+    self.m()
+    self.tl()
+    self.m()
+    self.put()
+    self.tr()
+    self.m()
+    self.tl()
+    self.m()
+    self.put()
+    self.tr()
+    self.mm(2)
+    self.tl()
+    self.m()
+    self.tl()
+    self.put5()
+    self.ta()
+    self.mm(4)
+    self.tl()
+    self.mm(2)
+
+  def a(self):
+    self.tl()
+    self.mm(4)
+    self.tl()
+    self.mm(6)
+    self.tl()
+    self.putm(4)
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.tl()
+    self.m()
+    self.tr()
+    self.putm(4)
+    self.ta()
+    self.mm(2)
+    self.tl()
+    self.m()
+    self.put2()
+    self.tl()
+    self.mm(2)
+    self.tl()
+    self.mm(4)
+    self.tl()
 
 
 def main():
