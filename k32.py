@@ -1,5 +1,5 @@
 from stanfordkarel import *
-
+from time import sleep
 
 class ktools: 
   def m(self):
@@ -118,6 +118,43 @@ class ktools:
       self.pick()
       self.m()
     self.pick()
+
+  def bowling(self):
+    self.put()
+    self.tr()
+    self.m()
+    self.tl()
+    self.m()
+    self.tl()
+    self.put()
+    self.mm(2)
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.tr()
+    self.put()
+    self.mm(2)
+    self.put()
+    self.mm(2)
+    self.put()
+    self.m()
+    self.tl()
+    self.m()
+    self.tl()
+    self.put()
+    self.mm(2)
+    self.put()
+    self.mm(2)
+    self.put()
+    self.mm(2)
+    self.put()
+    self.tr()
+    self.m()
+    self.tr()
+    self.mm(3)
+    self.tr()
+  
     
     pass
 
@@ -126,7 +163,11 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    move()
+    kt.mm(4)
+    kt.tl()
+    sleep(3)
+    kt.m()
+    kt.bowling()
     pass
 
 
