@@ -1,5 +1,5 @@
 from stanfordkarel import *
-from time import sleep
+
 
 class ktools: 
   def m(self):
@@ -164,6 +164,29 @@ class ktools:
         self.tl()
         self.m()
 
+  def gardening(self):
+    self.tl()
+    self.mm(4)
+    self.tl()
+    self.m()
+    for _ in range(4):
+      for _ in range(2):
+        if self.fic():
+          self.m()
+      for _ in range(1):
+        if self.fib():
+          self.put()
+          self.tr()
+      for _ in range(2):
+        if self.fic():
+          self.m()
+      for _ in range(1):
+        if self.lic():
+          self.tl()
+          self.m()
+          self.tl()
+          self.m()
+  
     pass
 
     
@@ -171,6 +194,12 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
+    kt.tl()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tr()
+    kt.gardening()
     pass
 
 
