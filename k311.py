@@ -170,22 +170,14 @@ class ktools:
     self.tl()
     self.m()
     for _ in range(4):
-      for _ in range(2):
-        if self.fic():
-          self.m()
-      for _ in range(1):
-        if self.fib():
-          self.put()
-          self.tr()
-      for _ in range(2):
-        if self.fic():
-          self.m()
-      for _ in range(1):
-        if self.lic():
-          self.tl()
-          self.m()
-          self.tl()
-          self.m()
+      self.mm(2)
+      self.put()
+      self.tr()
+      self.mm(3)
+      self.tl()
+      self.m()
+      self.tl()
+      self.m()
   
     pass
 
