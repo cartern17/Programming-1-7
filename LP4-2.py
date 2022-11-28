@@ -1,5 +1,5 @@
 def main():
-  weight = int(input("Enter weight in kilometers: "))
+  weight = int(input("Enter weight in kilograms: "))
   length = int(input("Enter length in centimeters: "))
   width = int(input("Enter width in centimeters: "))
   height = int(input("Enter height in centimeters: "))
