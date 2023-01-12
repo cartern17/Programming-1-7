@@ -10,20 +10,19 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Breakout')
 
 #define font
-font = pygame.font.SysFont('Constantia', 30)
+font = pygame.font.SysFont('Constantia', 20)
 
 #define colours
-bg = (234, 218, 184)
+bg = (86, 89, 86)
 #block colours
-block_red = (242, 85, 96)
-block_green = (86, 174, 87)
-block_blue = (69, 177, 232)
+block_red = (217, 4, 4)
+block_pink = (14, 230, 14)
+block_blue = (69, 120, 250)
 #paddle colours
-paddle_col = (142, 135, 123)
+paddle_col = (219, 228, 235)
 paddle_outline = (100, 100, 100)
 #text colour
-text_col = (78, 81, 139)
-
+text_col = (231, 235, 7)
 
 
 #define game variables
@@ -80,9 +79,9 @@ class wall():
 			for block in row:
 				#assign a colour based on block strength
 				if block[1] == 3:
-					block_col = block_blue
+					block_col = block_red
 				elif block[1] == 2:
-					block_col = block_
+					block_col = block_pink
 				elif block[1] == 1:
 					block_col = block_blue
 				pygame.draw.rect(screen, block_col, block[0])
@@ -261,10 +260,11 @@ while run:
 			draw_text('CLICK ANYWHERE TO START', font, text_col, 100, screen_height // 2 + 100)
 		elif game_over == 1:
 			draw_text('YOU WON!', font, text_col, 240, screen_height // 2 + 50)
-			draw_text('CLICK ANYWHERE TO START', font, text_col, 100, screen_height // 2 + 100)
+			draw_text('CLICK ANYWHERE TO MOVE TO NEXT LEVEL', font, text_col, 100, screen_height // 2 + 100)
+      
 		elif game_over == -1:
 			draw_text('YOU LOST!', font, text_col, 240, screen_height // 2 + 50)
-			draw_text('CLICK ANYWHERE TO START', font, text_col, 100, screen_height // 2 + 100)
+			draw_text('CLICK ANYWHERE TO RESTART', font, text_col, 100, screen_height // 2 + 100)
 
 
 	for event in pygame.event.get():
